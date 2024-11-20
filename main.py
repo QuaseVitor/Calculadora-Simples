@@ -6,22 +6,15 @@ while True:
     
     operador = input("o que deseja fazer? (+-/*) ")
     
-    numeros_validos = None
-    
-    
     ##Validando numeros
     
     try:
         numero_1 = float(numero_1)
         numero_2 = float(numero_2)
         
-        numeros_validos = True
         
         print("tudo ok")
     except:
-        pass   
-    
-    if numeros_validos is None:
         print("numeros invalidos")
         continue
        
@@ -47,9 +40,7 @@ while True:
     elif operador == "*":
         print(numero_1*numero_2)
     
-        
-        
-        
+          
         
     sair = input("quer sair?S/N ").upper().startswith('S')
     
